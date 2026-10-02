@@ -1,0 +1,20 @@
+# Install with:
+#   pip install -r requirements.txt
+#
+# These are the exact versions this repository was tested with (Python 3.12).
+# Pinning exact versions ("==") means everyone who installs from this file gets
+# the same software, which is the first step toward getting the same results.
+numpy==2.5.3
+pandas==2.2.3
+scipy==1.18.1
+matplotlib==3.11.2
+plotly==7.1.0
+streamlit==1.64.0
+pytest==9.1.1
+python-decouple==3.8
+doit==0.37.0
+chartbook==0.1.1
+jupytext==1.19.5
+nbconvert==7.17.1
+ipykernel==7.3.0
+wrds==3.5.0

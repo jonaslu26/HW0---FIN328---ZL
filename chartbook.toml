@@ -1,0 +1,31 @@
+[project]
+id = "hw0"
+name = "HW 0: Markowitz Portfolio Selection"
+description = "Mean-variance portfolio selection on monthly CRSP returns for twelve large US stocks, following Markowitz (1952)."
+maintainer = "Jeremiah Bejarano"
+contributors = ["Jeremiah Bejarano"]
+repo_url = "https://github.com/hw-finm-32800/hw0"
+readme = "./README.md"
+copyright = "2026"
+os_compatibility = ["Windows", "Linux", "macOS"]
+build = """
+doit
+"""
+
+[notebooks]
+
+[notebooks.01_markowitz]
+description = "The mean-variance frontier, the tangency portfolio, and how both move with the inputs."
+path = "_output/01_markowitz.ipynb"
+
+[notebooks.02_markowitz_derivation]
+description = "Derivation of the mean-variance frontier used in the main notebook."
+path = "_output/02_markowitz_derivation.ipynb"
+
+[dataframes]
+
+[dataframes.crsp_monthly_returns]
+path = "./_data/crsp_monthly_returns.csv"
+docs = "Monthly CRSP total returns for twelve large US stocks (AAPL through BA), the CRSP value-weighted market return (MKT), and the one-month T-bill rate from the Fama-French library (RF), from January 2000. One row per month."
+
+[charts]
